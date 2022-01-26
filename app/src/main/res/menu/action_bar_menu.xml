@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_about_me_always"
+        android:icon="@drawable/ic_baseline_info_24"
+        app:iconTint="@color/white"
+        app:showAsAction="always"
+        android:title="About me!" />
+
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="never"
+        android:title="Settings" />
+
+    <item android:id="@+id/action_faq"
+        android:icon="@drawable/ic_baseline_help_24"
+        app:showAsAction="never"
+        android:title="FAQs" />
+
+    <item android:id="@+id/action_about_us"
+        android:icon="@drawable/ic_baseline_contact_mail_24"
+        app:showAsAction="never"
+        android:title="About me!" />
+
+    <item android:id="@+id/action_visit_website"
+        android:icon="@drawable/ic_baseline_blur_circular_24"
+        app:showAsAction="never"
+        android:title="Visit website" />
+
+</menu>

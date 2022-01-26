@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity"
+    android:background="@drawable/ctr_bg">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/Theme.Managecollege">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapseingToolbar_fragment_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:title="Photos"
+                    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                    android:background="@drawable/ctr_bg">
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar_fragment_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:layout_collapseMode="pin"
+                            app:menu="@menu/action_bar_menu"/>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:background="@drawable/round_left_corner_70">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/round_left_corner_70">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/profileImage_full_photos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_baseline_person_24"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.044"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearance="@style/ShapeAppearanceOverlay.ImageView" />
+
+                        <TextView
+                            android:id="@+id/username_full_photos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="4dp"
+                            android:maxWidth="325dp"
+                            android:text="username"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.048"
+                            app:layout_constraintStart_toEndOf="@+id/profileImage_full_photos"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/uploadedTime_full_photos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:maxWidth="325dp"
+                            android:text="uploaded time"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.02"
+                            app:layout_constraintStart_toEndOf="@+id/profileImage_full_photos"
+                            app:layout_constraintTop_toBottomOf="@+id/username_full_photos" />
+
+                        <ImageView
+                            android:id="@+id/image_full_photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/uploadedTime_full_photos"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/caption_full_photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="caption"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/image_full_photos"
+                            android:layout_marginLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/marginBottomProblemFix"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/caption_full_photos" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_notes_navigation_for_user_profile"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Notes" />
+
+    <item
+        android:id="@+id/navigation_photos_navigation_for_user_profile"
+        android:icon="@drawable/ic_baseline_insert_photo_24"
+        android:title="Photos" />
+
+    <item
+        android:id="@+id/navigation_news_navigation_for_user_profile"
+        android:icon="@drawable/ic_baseline_comment_24"
+        android:title="News" />
+
+</menu>

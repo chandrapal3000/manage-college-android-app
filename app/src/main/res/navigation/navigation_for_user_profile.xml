@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_for_user_profile"
+    app:startDestination="@+id/navigation_notes_navigation_for_user_profile">
+
+    <fragment
+        android:id="@+id/navigation_notes_navigation_for_user_profile"
+        android:name="com.chandrapal.manage_college.ui.notes_user_profile.NotesFragmentUserProfile"
+        android:label="Notes"
+        tools:layout="@layout/fragment_home_user_profile">
+
+        <action
+            android:id="@+id/go_to_HomeFragmentOfUserProfile"
+            app:destination="@+id/navigation_notes_navigation_for_user_profile"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_photos_navigation_for_user_profile"
+        android:name="com.chandrapal.manage_college.ui.photos_user_profile.PhotosFragment"
+        android:label="Photos"
+        tools:layout="@layout/fragment_photos" >
+
+        <action
+            android:id="@+id/go_to_PhotosFragmentOfUserProfile"
+            app:destination="@+id/navigation_photos_navigation_for_user_profile"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_news_navigation_for_user_profile"
+        android:name="com.chandrapal.manage_college.ui.news_user_profile.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news_user_profile" >
+
+        <action
+            android:id="@+id/go_to_NewsFragmentOfUserProfile"
+            app:destination="@+id/navigation_News_navigation_for_user_profile"/>
+
+    </fragment>
+
+</navigation>

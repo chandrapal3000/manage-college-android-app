@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.chandrapal.manage_college.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/go_to_HomeFragment"
+            app:destination="@+id/navigation_home" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.chandrapal.manage_college.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+
+        <action
+            android:id="@+id/go_from_dashboard_to_photos"
+            app:destination="@+id/navigation_photos"/>
+
+        <action
+            android:id="@+id/go_from_dashboard_to_news"
+            app:destination="@+id/navigation_news"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_photos"
+        android:name="com.chandrapal.manage_college.ui.photos.PhotosFragment"
+        android:label="Photos"
+        tools:layout="@layout/fragment_photos" >
+
+        <action
+            android:id="@+id/go_from_photos_to_dashboard"
+            app:destination="@+id/navigation_dashboard"/>
+
+        <action
+            android:id="@+id/go_to_PhotosFragment"
+            app:destination="@+id/navigation_photos"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.chandrapal.manage_college.ui.news.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" >
+
+        <action
+            android:id="@+id/go_from_news_to_dashboard"
+            app:destination="@+id/navigation_dashboard"/>
+
+        <action
+            android:id="@+id/go_to_NewsFragment"
+            app:destination="@+id/navigation_news"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.chandrapal.manage_college.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.chandrapal.manage_college.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
