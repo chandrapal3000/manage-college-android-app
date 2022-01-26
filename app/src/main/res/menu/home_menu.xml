@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_search_home_menu"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always|collapseActionView"
+        app:iconTint="@color/white"
+        app:actionViewClass="android.widget.SearchView"/>
+
+    <item android:id="@+id/action_listview_home_menu"
+        android:title="Listview"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_small_cardview_home_menu"
+        android:title="Small cardview"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_table_rows_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_cardview_home_menu"
+        android:title="Cardview"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_table_view_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_column_view_home_menu"
+        android:title="Column view"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_about_me_always_home_menu"
+        android:icon="@drawable/ic_baseline_info_24"
+        app:iconTint="@color/white"
+        app:showAsAction="always"
+        android:title="About me!" />
+
+    <item android:id="@+id/action_settings_home_menu"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:iconTint="@color/white"
+        app:showAsAction="never"
+        android:title="Settings" />
+
+    <item android:id="@+id/action_faq_home_menu"
+        android:icon="@drawable/ic_baseline_help_24"
+        app:iconTint="@color/white"
+        app:showAsAction="never"
+        android:title="FAQs" />
+
+    <item android:id="@+id/action_about_us_home_menu"
+        android:icon="@drawable/ic_baseline_contact_mail_24"
+        app:iconTint="@color/white"
+        app:showAsAction="never"
+        android:title="About me!" />
+
+    <item android:id="@+id/action_visit_website_home_menu"
+        android:icon="@drawable/ic_baseline_blur_circular_24"
+        app:iconTint="@color/white"
+        app:showAsAction="never"
+        android:title="Visit website" />
+
+    <item android:id="@+id/action_see_notes_on_website_home_menu"
+        android:icon="@drawable/ic_baseline_blur_circular_24"
+        app:iconTint="@color/white"
+        app:showAsAction="never"
+        android:title="See notes on website" />
+
+    <item android:id="@+id/action_see_website_in_the_app_home_menu"
+        android:icon="@drawable/ic_baseline_blur_circular_24"
+        app:iconTint="@color/white"
+        app:showAsAction="never"
+        android:title="See website in the app" />
+
+</menu>

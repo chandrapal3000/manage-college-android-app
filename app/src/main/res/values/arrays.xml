@@ -1,0 +1,71 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <string-array name="branches_list">
+        <item>Choose branch</item>
+        <item>cs 1st semester</item>
+        <item>cs 2nd semester</item>
+        <item>cs 3rd semester</item>
+        <item>cs 4th semester</item>
+        <item>cs 5th semester</item>
+        <item>cs 6th semester</item>
+        <item>civil 1st semester</item>
+        <item>civil 2nd semester</item>
+        <item>civil 3rd semester</item>
+        <item>civil 4th semester</item>
+        <item>civil 5th semester</item>
+        <item>civil 6th semester</item>
+        <item>mechanical 1st semester</item>
+        <item>mechanical 2nd semester</item>
+        <item>mechanical 3rd semester</item>
+        <item>mechanical 4th semester</item>
+        <item>mechanical 5th semester</item>
+        <item>mechanical 6th semester</item>
+
+    </string-array>
+
+    <string-array name="subjects_list">
+        <item>Choose subject</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+
+    <string-array name="chapters_list">
+        <item>Choose chapter</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+
+    <string-array name="status_list">
+        <item>enable</item>
+        <item>disable</item>
+    </string-array>
+
+</resources>

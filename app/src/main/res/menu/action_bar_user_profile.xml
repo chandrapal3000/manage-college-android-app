@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_share_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_share_24"
+        app:showAsAction="always"
+        android:title="Share user profile" />
+
+    <item android:id="@+id/action_call_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_call_24"
+        app:showAsAction="always"
+        android:title="Call" />
+
+    <item android:id="@+id/action_send_email_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_send_24"
+        app:showAsAction="always"
+        android:title="Send email" />
+
+    <item android:id="@+id/action_settings_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="never"
+        android:title="Settings" />
+
+    <item android:id="@+id/action_faq_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_help_24"
+        app:showAsAction="never"
+        android:title="FAQ" />
+
+    <item android:id="@+id/action_about_us_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_contact_mail_24"
+        app:showAsAction="never"
+        android:title="About us" />
+
+    <item android:id="@+id/action_visit_website_action_bar_user_profile"
+        android:icon="@drawable/ic_baseline_blur_circular_24"
+        app:showAsAction="never"
+        android:title="Visit website" />
+
+</menu>

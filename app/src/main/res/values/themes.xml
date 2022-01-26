@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Managecollege" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="fontFamily">@font/nova_round</item>
+        <item name="colorPrimary">#a51e22</item>
+        <item name="colorPrimaryVariant">#800000</item>
+        <item name="colorOnPrimary">#03DAC5</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="itemBackground">@color/white</item>
+        <item name="popupMenuBackground">@color/colorFullNotesPrimary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ImageView_rounded_20dp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ImageView_with_border">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="borderWidth">2dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ImageView_rounded_custom_01">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">70dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">70dp</item>
+
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:background">@drawable/bg_label</item>
+        <item name="android:textColor">#FFF</item>
+
+    </style>
+
+</resources>
+
+
+<!--<item name="colorPrimary">@color/purple_500</item>-->
+<!--<item name="colorPrimaryVariant">@color/purple_700</item>-->
+<!--<item name="colorOnPrimary">@color/white</item>-->
